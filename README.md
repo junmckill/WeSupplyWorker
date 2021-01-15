@@ -1,12 +1,13 @@
 # WeSupplyWorker
 
 
-WeSupply API Socumentation
-https://documenter.getpostman.com/view/11859344/T17AiAYq#30ca0a2d-df7e-486e-8f47-6776e978ce6a
+WeSupply API Documentation
+--------------------------
+https://documenter.getpostman.com/view/11859344/T17AiAYq
 
 
 WeSupply Sample API Request / Postman
-
+-------------------------------------
 https://www.getpostman.com/collections/0f9fda38cbdf5946c61a
 
 
