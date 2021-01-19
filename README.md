@@ -61,6 +61,7 @@ DB Details
 	[CompanyId]         Obtain from appsettings.json
 	[RMAAuthID]         ID from Hdr record
 	[ItemNumber]        Obtain from JSON items[].sku
+	[Name]				Obtain from JSON items[].name
     [Quantity]			1
 	[Reason] 			items[].return_reason,
 	[ReStockCode]		null
