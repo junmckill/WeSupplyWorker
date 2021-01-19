@@ -34,7 +34,7 @@ https://thecloseout.labs.wesupply.xyz/api/returns?page=1
 
 3 Loop through the List / Pages 
 
-4 Insert missing returns in DB (Hdr, Dtl).  Detail records needs to be one per item (e.g. quantity = 5 will generate 5 records.)
+4 Insert missing returns in DB (Hdr, Dtl).
 
 Note: API to return a single return does not include item sku making it not usable for our objective
 ----------------------------------------------------------------------------------------------------
@@ -67,3 +67,13 @@ DB Details
 	[Comment]			Obtain from JSON  return_comment
 	[UserName]			null
 	[UpdatedDate]		null
+
+	/****** Script for SelectTopNRows command from SSMS  ******/
+	SELECT TOP (1000) [ID]
+		,[OptionKey]
+		,[OptionValue]
+		,[UserModifiable]
+	FROM [Merlin].[dbo].[eCommerceMerlinOptions]
+
+
+	WESUPPLY_LAST_PAGE
