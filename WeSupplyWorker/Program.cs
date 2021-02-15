@@ -15,7 +15,7 @@ using Utils;
 using System.Diagnostics;
 using System.Threading;
 
-namespace WeSupplySync
+namespace WeSupplyWorker
 {
     public class IpConfig
     {
@@ -53,7 +53,7 @@ namespace WeSupplySync
             else
                 conn0 = docInventst.OpenSqlDatabase(IpConfig._remoteserver + (IpConfig._remoteport != "" ? "," : "") + IpConfig._remoteport, "invictaHQ", "uid=" + IpConfig._remoteuser + ";pwd=" + IpConfig._remotepass);
 
-            Logger.log("-- BEGIN PROCESSING --");
+            Logger.log("-- BEGIN PROCESSING --"); //kjdhfkjhdfkjh
 
             //// Get the pickings available in all the warehouses
             //String tmpSQL = "select ID,PickingLocation FROM [InvictaAUX].[dbo].[eCommercepicking] where isSent = 0 and PickingLocation IN('E0001', 'E-CONS01', 'EBAY001', 'OAK-L001', 'SHQ-L001', 'B0001')";
